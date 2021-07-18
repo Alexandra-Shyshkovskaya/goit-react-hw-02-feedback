@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Container from "./Components/Container/Container";
 import FeedbackOptions from "./Components/FeedbackOptions/FeedbackOptions";
 import Statistics from "./Components/Statistics";
@@ -16,7 +16,7 @@ const Notification = ({ message }) => (
   </section>
 );
 
-class App extends React.Component {
+class App extends Component {
   state = {
     good: 0,
     neutral: 0,
